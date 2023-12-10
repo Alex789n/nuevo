@@ -1,0 +1,28 @@
+<div class="fondo">
+    <div class="no-existe contenido-No" *ngIf="datCat.swNoBus">
+        <h3>
+            No hay publicaciones que coincidan con tu busqueda :c
+        </h3>
+    </div>
+    <h3 *ngIf="!datCat.swNoBus">{{datCat.busqueda}}</h3>
+    <div *ngIf="!datCat.swNoBus"  class="contenido-principal" >
+        <div class="cats">
+
+            Otras dategorias:
+            <div class="datos" *ngFor="let cate of datCat.vecCategorias">
+                <div class="cato">{{cate.nombre}}</div>
+            </div>
+        </div>
+        <div class="contenidoBus" >
+                <div class="contenido" *ngFor="let dat of datCat.vecBusKnow">
+                    <div class="imagen">
+                        <img [src]="dat.imagenUrl" alt="">
+                    </div>
+                    <div class="datos-bus">
+                        <div class="nombre">{{dat.nombre}}</div>
+                        <div class="precio"><h3>{{dat.precio}} Bs.</h3></div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>

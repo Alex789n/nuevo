@@ -1,0 +1,24 @@
+<div class="header">
+    <div class="header--primero">
+        <div>
+
+                <img class="logo" src="assets/logoPila.png" alt="Logo">
+        </div>
+        <div class="search">
+            <input type="text" class="form-control" placeholder="Buscar" [(ngModel)]="datCat.busqueda" (keypress)="onKeyPress($event)">
+            <button id="btnBuscar" class="btn btn-primary" style="background-color: #DFEEEE;" (click)="datCat.AplicarBus(datCat.busqueda)" routerLink="/busqueda">Buscar</button>
+        </div>
+    </div>
+    <div class="header--segundo">
+        <div class="ubiB">
+            <img class="ubi" src="assets/ubicacion.png" alt="">
+            Enviar a Bolivia
+        </div>
+        <nav class="nav">
+            <a href="/inicio">Inicio</a>
+            <a href="/login">Iniciar sesion</a>
+            <a href="/categorias">Categorias</a>
+            <a href="/registro">Registrarse</a>
+        </nav>
+    </div>
+</div>

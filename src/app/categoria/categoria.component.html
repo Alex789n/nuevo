@@ -1,0 +1,11 @@
+<div class="fondo">
+    <h3 class="titulo">Categorias para comprar y vender</h3>
+    <div class="cat" *ngFor = "let dato of datCat.vecCategorias">
+        <h5 class="titulo" (click)="datCat.AplicarBus('Dell Inspiron 15')" routerLink="/busqueda">{{dato.nombre}}</h5>
+        <div class="categorias">
+            <div  *ngFor="let cats of datCat.vecCategorias[1].catV">
+                {{cats}}
+            </div>
+        </div>
+    </div>
+</div>

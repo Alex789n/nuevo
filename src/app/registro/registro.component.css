@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 85vh;
+}
+.barra{
+    width: 100vw;
+    height: 15vh;
+    background-color: #ffe08c;
+}
+.fondo{
+    background-color: #f0f0f0;
+}
